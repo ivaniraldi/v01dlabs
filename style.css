@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-weight: lighter;
+}
+
+.gothic-text{
+    font-family: "Jacquard 12", system-ui;
+    font-size: 1.6em;
+}
+.min-gothic-text{
+font-family: "Jacquarda Bastarda 9", serif;
+    font-size: 1.2em;
+}
+/* #-----------... S C R O L L B A R ...---------#  */
+/* Scrollbar base */
+::-webkit-scrollbar {
+  width: 24px;              /* ancho de la barra vertical */
+  height: 10px;             /* alto de la barra horizontal */
+}
+
+.post-card{
+    border: 1px solid rgb(61, 27, 27);
+
+    box-shadow: 3px 0 3px 0 rgba(58, 18, 18, 0.712);
+    padding: 12px;
+    margin-bottom: 12px;
+}
+/* Fondo del track (canal) */
+::-webkit-scrollbar-track {
+  background: #161616;      /* color del fondo */
+  border-radius: 0px;
+}
+
+/* “Thumb” (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(360deg, #8d0000, #380000);
+  border-radius: 0px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(36    0deg, #7c0000, #8b1212);
+}
+
+.main-content{
+  border: 2px solid rgba(109, 47, 47, 0.836);
+
+    box-shadow: 3px 5px 0 0 rgba(180, 100, 100, 0.712);
+  width: 100%;
+  padding: 12px;
+  margin: 6px;
+}
+.aside-r{
+    width: 240px;
+    padding: 6px;
+}
+
+body{
+    
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: black;
+    color: rgb(219, 207, 206);
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "aside footer";
+    grid-template-columns: 240px auto;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    border: 1px solid rgb(51, 12, 12);
+    border-radius: 5px  ;
+    padding: 16px;
+}
+footer{
+    grid-area: footer;
+    background-image: url(./images/fire.jpg);
+    height: 20px;
+    background-size: contain;
+    background-position:bottom;
+}   
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    max-width: 240px;
+}
+.img-aside{
+    width: 214px;
+}
+.img-aside-r{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 4px;
+    border: 4px dotted brown;
+}
+.list-aside{
+    scrollbar-color: rgb(151, 0, 0) black;
+    display: flex;
+    flex-direction: column; 
+    gap: 8px;
+    overflow: auto;
+    max-height: 200px;
+ background-color: rgba(44, 1, 1, 0.452);
+ margin: 10px;
+}
+.prehead{
+    background-image: url(./images/kalaka.jpg);
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(70%);
+}
+.navbar{
+    display: flex;  
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(175, 53, 42, 0.404);
+    padding: 4px;
+    align-items: center;
+} 
+.navbar-1{
+    display: flex;  
+    justify-content: space-between;
+    padding: 2px;
+    gap:24px;
+    align-items: center;
+}  
+.navbar-2{
+    display: flex;  
+    justify-content: space-between;
+    padding: 2px;
+    align-items: center;
+}
+.navinput{
+    width: 800px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 4px;
+    border: brown 2px solid;
+    box-shadow: 1px 2px 0 0 rgba(190, 110, 110, 0.747);
+}
+.navinput:focus{
+    outline: none;
+    border: red 2px solid;
+    box-shadow: 1px 2px 0 0 rgba(255, 0, 0, 0.747);
+}
+.inputdec{
+    color: brown;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-left: 12px;
+}
+.inputdec:hover{
+    color: rgb(221, 10, 10);
+    cursor: pointer;
+    font-size: 26px;
+}
+a{
+    color: rgb(219, 207, 206);
+    text-decoration: none;
+}
+.navimg{
+    width: 60px;
+    height: 40px;
+}
+.navimg-2{
+    width: 80px;
+}
+.link-menu{
+        border: 4px solid black;
+        padding: 1px;
+}
+.link-menu:hover{
+    text-decoration: underline;
+    background-color: rgb(163, 11, 11);
+    color: rgb(32, 9, 5);
+}
+.highlight-red:hover{
+    color: rgb(255, 0, 0);
+}
+.link-menu-off{
+    color: rgb(121, 40, 40);
+    pointer-events: none;
+    border: 4px solid black;
+    padding: 1px;
+}   
+.link-menu-outbound{
+    color: rgb(145, 78, 72);
+    text-decoration: none;
+    border: 4px solid black;
+    padding: 1px;
+}
+.link-menu-outbound:hover{
+    cursor: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 38, 0);
+}
+.nav-link2:hover{
+    color:red
+}
+.post-img{
+    max-width: 200px;
+    border-radius: 8px;
+}
